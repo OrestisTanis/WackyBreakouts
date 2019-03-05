@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Orestis Tanis - Wacky Breakouts </title>
+
+ 
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="TemplateData/style.css">
+
+  <!--Font Links-->
+  <!--Sarina-->
+  <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">  
+
+
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WackyFinal.json", {onProgress: UnityProgress});
+    </script>
+
+    
+  </head>
+  <body>
+
+
+    <div class="webgl-content" style="border: 5px solid white">
+      <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title" style="color: white">Wacky Breakouts</div>
+
+        <br>
+
+        <div class="instructions">
+         <h2 style="padding: 15px"> Created by Orestis Tanis. Hit "HELP" if you need instructions!</h2>                     
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
